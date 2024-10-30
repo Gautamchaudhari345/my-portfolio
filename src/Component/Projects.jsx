@@ -14,7 +14,7 @@ const projects = [
     title: 'Portfolio-website',
     description: 'An Portfolio website  built with React and Firebase.',
     link: 'https://example.com',
-    github: 'https://github.com/yourusername/project-two',
+    github: 'https://github.com/Gautamchaudhari345/my-portfolio',
     image: '/Asset/Portfolio.png',
   },
   {
