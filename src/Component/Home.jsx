@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'; 
 import { Link } from 'react-scroll';
 import { FaArrowDown } from 'react-icons/fa';
 
 const Home = () => {
+  const photoURL = '/Asset/photo.jpeg'; 
   return (
     <div className="relative h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center text-white">
       
@@ -13,7 +14,6 @@ const Home = () => {
         }}
       ></div>
 
-     
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="relative z-10 text-center px-4 md:px-8 max-w-4xl">
@@ -23,6 +23,13 @@ const Home = () => {
         <p className="text-lg md:text-2xl mb-8 animate-fade-in-up delay-200">
           A passionate MERN stack developer focused on creating elegant web solutions.
         </p>
+
+        {/* Add your photo here */}
+        <img
+          src={photoURL}
+          alt="Gautam"
+          className="mx-auto mb-6 rounded-full w-40 h-40 object-cover border-4 border-yellow-400 shadow-lg"
+        />
 
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6 animate-fade-in-up delay-400">
           <a
@@ -39,7 +46,6 @@ const Home = () => {
           </a>
         </div>
 
-     
         <div className="mt-16 animate-bounce">
           <FaArrowDown className="text-3xl text-yellow-400" />
         </div>

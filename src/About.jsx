@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaUserAlt, FaCode, FaLaptopCode, FaFileDownload } from 'react-icons/fa';
 
 const About = () => {
-  const [resume, setResume] = useState(null);
-  const [resumeURL, setResumeURL] = useState('');
-
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      setResume(file);
-      const url = URL.createObjectURL(file);
-      setResumeURL(url);
-    }
-  };
+  const resumeImageURL = '/Asset/resume.jpg'; 
+  const resumeDownloadURL = 'https://magenta-elene-92.tiiny.site'; 
 
   return (
     <div className="relative text-white py-20" 
@@ -43,8 +34,6 @@ const About = () => {
               Specializing in full-stack development, I build responsive web applications that are both user-friendly and efficient.
             </p>
           </div>
-          
-          {/* Card 3 */}
           <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg p-6 shadow-2xl transform transition-transform hover:scale-105 hover:shadow-3xl animate-fade-in-up delay-500">
             <FaLaptopCode className="text-white text-5xl mb-4 transition-transform duration-200 transform hover:rotate-12 hover:animate-bounce" />
             <h3 className="text-2xl font-semibold underline">My Skills</h3>
@@ -59,26 +48,22 @@ const About = () => {
         </p>
 
         <div className="mt-12">
-          <h3 className="text-3xl font-semibold mb-4">Upload Your Resume</h3>
-          <input
-            type="file"
-            accept=".pdf,.doc,.docx"
-            onChange={handleFileChange}
-            className="mb-4 bg-white text-gray-800 p-2 rounded border border-gray-300"
+          <h3 className="text-3xl font-semibold mb-4">My Resume</h3>
+          
+          <img 
+            src={resumeImageURL} 
+            alt="Resume Preview" 
+            className="max-w-xs md:max-w-md mx-auto mb-4 border-4 border-blue-600 rounded-lg shadow-lg"
           />
-          {resume && (
-            <div className="mt-4">
-              <p className="text-lg">Uploaded Resume: {resume.name}</p>
-              <a
-                href={resumeURL}
-                download={resume.name}
-                className="flex items-center mt-2 bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
-              >
-                <FaFileDownload className="mr-2" />
-                Download Resume
-              </a>
-            </div>
-          )}
+
+          <a
+            href={resumeDownloadURL}
+            download="Gautam_Resume.pdf"
+            className="flex items-center mt-4 bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
+          >
+            <FaFileDownload className="mr-2" />
+            Download Resume
+          </a>
         </div>
       </div>
     </div>
