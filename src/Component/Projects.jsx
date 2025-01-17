@@ -30,7 +30,7 @@ const projects = [
     description: 'A travel and tourism web application  built by MERN stack.',
     link: 'https://trip-chat-nwtd-git-main-gautamchaudhari345s-projects.vercel.app/',
     github: 'https://github.com/yourusername/project-three',
-    image: '/Asset/lms.png',
+    image: '/Asset/tv.png',
   },
   {
     title: 'Employee details management',
