@@ -19,9 +19,16 @@ const projects = [
   },
   
   {
-    title: 'Travel and tourism ',
+    title: 'Learning management web application  ',
     description: 'A travel and tourism web application  built by MERN stack.',
     link: 'https://learninh-msnshement-git-main-gautamchaudhari345s-projects.vercel.app/s',
+    github: 'https://github.com/yourusername/project-three',
+    image: '/Asset/lms.png',
+  },
+  {
+    title: 'Travel and tourism ',
+    description: 'A travel and tourism web application  built by MERN stack.',
+    link: 'https://trip-chat-nwtd-git-main-gautamchaudhari345s-projects.vercel.app/',
     github: 'https://github.com/yourusername/project-three',
     image: '/Asset/lms.png',
   },
