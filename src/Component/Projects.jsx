@@ -17,9 +17,10 @@ const projects = [
     github: 'https://github.com/Gautamchaudhari345/my-portfolio',
     image: '/Asset/Portfolio.png',
   },
+  
   {
-    title: 'Learning mannagement system',
-    description: 'A lms site built by MERN stack.',
+    title: 'Travel and tourism ',
+    description: 'A travel and tourism web application  built by MERN stack.',
     link: 'https://learninh-msnshement-git-main-gautamchaudhari345s-projects.vercel.app/s',
     github: 'https://github.com/yourusername/project-three',
     image: '/Asset/lms.png',
