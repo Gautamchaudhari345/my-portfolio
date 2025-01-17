@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Learning mannagement system',
     description: 'A lms site built by MERN stack.',
-    link: 'https://example.com',
+    link: 'https://learninh-msnshement-git-main-gautamchaudhari345s-projects.vercel.app/s',
     github: 'https://github.com/yourusername/project-three',
     image: '/Asset/lms.png',
   },
